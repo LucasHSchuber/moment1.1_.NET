@@ -1,0 +1,7 @@
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/Moment1.1-razor
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/appsettings.json
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/Moment1.1-razor.dll
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/Moment1.1-razor.deps.json
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/Moment1.1-razor.runtimeconfig.json
+/Users/lucash.schuber/Desktop/NET/Moment1.1-razor/bin/Release/net8.0/publish/Moment1.1-razor.pdb

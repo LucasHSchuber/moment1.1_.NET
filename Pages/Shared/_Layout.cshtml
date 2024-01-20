@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Moment1._1_razor</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Moment1._1_razor.styles.css" asp-append-version="true" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c62fde443a.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header d-flex justify-content-between">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="">
+                <div>
+                    <h6><span>Today's date:</span> @DateTime.Now.ToString("yyyy-MM-dd")</h6>
+                </div>
+                <div>
+                    <span class="toggler" id="toggler" style="font-size:20px;cursor:pointer;float:right;"
+                        onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div id="sidebar">
+        <button onclick="closeNav()" class="close-mobile-menu mb-3 mt-1"><i class=" fa-regular fa-circle-xmark"></i></button>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+        <a class="nav-link text-dark" asp-area="" asp-page="/Razor">Razor</a>
+        <a class="nav-link text-dark" asp-area="" asp-page="/About">About me</a>
+    </div>
+    <div class="content">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Moment1._1_razor - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

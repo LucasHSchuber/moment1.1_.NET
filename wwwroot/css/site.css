@@ -1,0 +1,163 @@
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* CONTENT */
+
+.content {
+  margin-left: 200px;
+  padding: 2em 2em 10em 2em;
+  margin-top: 6em;
+  /* height: 1000px; */
+}
+
+
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  height: 6em;
+  width: 100%;
+  padding: 2em 4em;
+  background-color: white;
+  border-bottom: 0.5px solid rgb(170, 170, 170);
+}
+
+.header h1 { 
+  font-size: 2.2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  color: #fcb843;
+}
+
+.header h6 span {
+  font-weight: 800;
+}
+
+/* .header:last-child{
+margin-right: 5em;
+} */
+
+
+/* NAVBAR */
+
+#sidebar {
+  /* margin: 0; */
+  /* margin-top: 2em; */
+  visibility: visible;
+  padding: 1em 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transition: 0.3s;
+}
+
+#sidebar a {
+  display: block;
+  color: black;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#sidebar a:hover:not(.active) {
+  background-color: #9b9b9b;
+  color: white;
+}
+
+.toggler {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    /* visibility: hidden; */
+    width: 0px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 6em;
+    /* height: 1000px; */
+  }
+
+  .toggler {
+    visibility: visible;
+  }
+
+  .close-mobile-menu {
+    display: block;
+    margin-left: 10%;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    color: red;
+    transition: 0.2s;
+  }
+
+  .close-mobile-menu:hover {
+    color: black;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .close-mobile-menu {
+    display: none;
+  }
+
+  #sidebar {
+    width: 200px !important;
+  }
+
+}
+
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  padding: 1em;
+  text-align: center;
+  background-color: inherit;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  /* position: relative; */
+  /* min-height: 100%; */
+}
+
+body {
+  /* margin-bottom: 60px; */
+}

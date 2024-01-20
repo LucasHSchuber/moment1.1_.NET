@@ -1,0 +1,42 @@
+﻿@page
+@model RazorModel
+@{
+    ViewData["Title"] = "Razor";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    var date = DateTime.Now;
+
+    DayOfWeek wk = DateTime.Today.DayOfWeek;
+
+}
+
+<h5 class="my-4">Information</h5>
+<p>
+    <span style="font-weight: 700;">Today's date and time:</span> @date
+</p>
+<p>Today is @wk</p>
+@*
+<p>My courses:</p>
+@{
+string[] courses = { "Lucas", "Kajsa", "Jake" };
+
+foreach (var course in courses)
+{
+<ol>@course</ol>
+}
+} *@
+
+
+<p class="mt-4" tyle="font-weight: 700;">My courses:</p>
+<ul>
+    @{
+
+        foreach (var data in Model.DataArray)
+        {
+            <li>@data.Name, @data.Code</li>
+        }
+
+    }
+</ul>
